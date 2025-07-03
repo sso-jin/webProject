@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그 확인</title>
+    <style>
+        .mountain{
+            border-collapse: collapse; /*separate 테두리 분리*/
+            /*border-spacing: 0px;*/
+            width: 400px;
+        }
+        .mountain td, .mountain th{
+            border: 1px solid black;
+        }
+        .mountain caption{
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>📜 주소록</caption>
+        <tr>
+            <th>이름</th>
+            <th>주소</th>
+            <th>전화</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>서울특별시 강남구 역삼동</td>
+            <td>010-1234-0987</td>
+        </tr>
+    </table>
+    
+    <br/>
+
+    <table class = "mountain">
+        <caption>산정보</caption>
+        <tr>
+            <th>산이름</th>
+            <th>주소</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <td>북한산</td>
+            <td>경기 고양시 덕양구 대서문길 375</td>
+            <td>02-909-0497</td>
+        </tr>
+        <tr>
+            <td>도봉산</td>
+            <td>서울특별시 도봉구 도봉동</td>
+            <td>02-954-6531</td>
+        </tr>
+    </table>
+</body>
+</html>

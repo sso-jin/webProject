@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 20px auto;
+        }
+        label{
+            display: block;
+            margin-top:10px;
+        }
+        input, textarea, fieldset{
+            width: 100%;
+            padding:8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>📌 게시글 등록</h2>
+        <form>
+            <label for="writer">작성자</label>
+            <input type="text" id="writer" name="writer" required/>
+
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" required/>
+
+            <label for="content">내용</label>
+            <textarea id="content" name="content" rows="10" placeholder="내용을 입력해주세요." required></textarea>
+
+            <fieldset>
+                <legend>첨부파일</legend>
+                <input type="file" name="files" id="files"/>
+            </fieldset>
+
+            <button type="submit">등록</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div>
+</body>
+</html>
